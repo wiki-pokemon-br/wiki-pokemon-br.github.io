@@ -1,0 +1,785 @@
+[
+ {
+  "nome": "First Stone",
+  "acesso": "Free",
+  "nivel": 25,
+  "dificuldade": 1,
+  "descricao": "Começa na cidade de CERULEAN, pra baixo no bueiro dentro da city, depois de entrar na quest vai até o final do labirinto e escolha uma entre as 3 principais pedras de evolução",
+  "video": "https://www.youtube.com/watch?v=gL3Fj7EUIj4",
+  "recompensas": [
+   {
+    "nome": "firestone",
+    "img": "img/recompensas/firestone.webp"
+   },
+   {
+    "nome": "waterstone",
+    "img": "img/recompensas/waterstone.webp"
+   },
+   {
+    "nome": "leafstone",
+    "img": "img/recompensas/leafstone.webp"
+   }
+  ]
+ },
+ {
+  "nome": "Second Stone",
+  "acesso": "Free",
+  "nivel": 45,
+  "dificuldade": 1,
+  "descricao": "Começa na cidade de TWINLEAF, pra cima no buraco, depois de entrar na quest vai até o final do labirinto e escolha uma entre as 3 principais pedras de evolução e ganha um patins para melhorar sua velocidade",
+  "video": "https://www.youtube.com/watch?v=Ub6uQqOw1MQ",
+  "recompensas": [
+   {
+    "nome": "firestone",
+    "img": "img/recompensas/firestone.webp"
+   },
+   {
+    "nome": "waterstone",
+    "img": "img/recompensas/waterstone.webp"
+   },
+   {
+    "nome": "leafstone",
+    "img": "img/recompensas/leafstone.webp"
+   },
+   {
+    "nome": "patins",
+    "img": "img/recompensas/patins.webp"
+   }
+  ]
+ },
+ {
+  "nome": "Thunder Stone",
+  "acesso": "Free",
+  "nivel": 50,
+  "dificuldade": 1,
+  "descricao": "Começa na cidade de VERMILION, pra esquerda no fly, desça pelo teto da casa elétrica clique no baú",
+  "video": "https://www.youtube.com/watch?v=QJujvuvKuQo",
+  "recompensas": [
+   {
+    "nome": "thunderstone",
+    "img": "img/recompensas/thunderstone.webp"
+   }
+  ]
+ },
+ {
+  "nome": "Enigma Stone",
+  "acesso": "Free",
+  "nivel": 50,
+  "dificuldade": 1,
+  "descricao": "Começa na cidade de CERULEAN, pra cima na ilha onde tem abra, desça no buraco e va pelo labirinto até o baú",
+  "video": "https://www.youtube.com/watch?v=CF3n9sYPa28",
+  "recompensas": [
+   {
+    "nome": "enigmastone",
+    "img": "img/recompensas/enigmastone.webp"
+   }
+  ]
+ },
+ {
+  "nome": "Heart Stone",
+  "acesso": "Free",
+  "nivel": 50,
+  "dificuldade": 1,
+  "descricao": "Começa na cidade de CERULEAN, pra baixo nas pedra da direita tem uma escadaria grande suba até o fim, você vera um bau no meio da montanha",
+  "video": "https://www.youtube.com/watch?v=_BwCI_NGBk4",
+  "recompensas": [
+   {
+    "nome": "heartstone",
+    "img": "img/recompensas/heartstone.webp"
+   }
+  ]
+ },
+ {
+  "nome": "Earth Stone",
+  "acesso": "Free",
+  "nivel": 50,
+  "dificuldade": 1,
+  "descricao": "Começa na cidade de PEWTER, pra direita tem uma caverna va até o final, você vera uma pedra vermelha só clicar com o botão direito do mouse",
+  "video": "https://www.youtube.com/watch?v=7O-nlfhdGCU",
+  "recompensas": [
+   {
+    "nome": "earthstone",
+    "img": "img/recompensas/earthstone.webp"
+   }
+  ]
+ },
+ {
+  "nome": "Punch Stone",
+  "acesso": "Free",
+  "nivel": 50,
+  "dificuldade": 1,
+  "descricao": "Começa na cidade de VERMILION, pra baixo na ilha de fly ou surf, atras da ilha tem uma sala com a pedra vermelha só clicar com o botão direito do mouse",
+  "video": "https://www.youtube.com/watch?v=GKWSjJfcfdI",
+  "recompensas": [
+   {
+    "nome": "punchstone",
+    "img": "img/recompensas/punchstone.webp"
+   }
+  ]
+ },
+ {
+  "nome": "Ice Stone",
+  "acesso": "Free",
+  "nivel": 50,
+  "dificuldade": 1,
+  "descricao": "Começa na cidade de LAVARRE, pra DIREITA de fly na ilha ICE, entre na caverna perto da arvore e vá pela direita até o final em cima do lago desce a escada depois vai full pra baixo no lago pra esquerda e full pra baixo, tem um baú",
+  "video": "https://www.youtube.com/watch?v=fkBj6T-NnEo",
+  "recompensas": [
+   {
+    "nome": "icestone",
+    "img": "img/recompensas/icestone.webp"
+   }
+  ]
+ },
+ {
+  "nome": "Fairy Stone",
+  "acesso": "Free",
+  "nivel": 50,
+  "dificuldade": 1,
+  "descricao": "Começa na cidade de CAMPHRIER, pra ESQUERDA E CIMA de fly até a entrada da fairy gale, de surf no lago e entra na caverna na primeira escada da esquerda, tem um baú",
+  "video": "https://www.youtube.com/watch?v=p2Zwt6gDBwE",
+  "recompensas": [
+   {
+    "nome": "fairystone",
+    "img": "img/recompensas/fairystone.webp"
+   }
+  ]
+ },
+ {
+  "nome": "Rock Stone",
+  "acesso": "Free",
+  "nivel": 50,
+  "dificuldade": 1,
+  "descricao": "Começa na cidade de CERULEAN, pra DIREITA de fly até a segunda ilha, entre na caverna de pedra e siga pelo labirinto, tem um baú",
+  "video": "https://www.youtube.com/watch?v=a6xpnbVUUro",
+  "recompensas": [
+   {
+    "nome": "rockstone",
+    "img": "img/recompensas/rockstone.webp"
+   }
+  ]
+ },
+ {
+  "nome": "Darkness Stone",
+  "acesso": "Free",
+  "nivel": 50,
+  "dificuldade": 1,
+  "descricao": "Começa na cidade de LAVENDER, pra direita no castelo, suba até o ultimo andar, tem um baú",
+  "video": "https://www.youtube.com/watch?v=KjXOmgDx7Uc",
+  "recompensas": [
+   {
+    "nome": "darknessstone",
+    "img": "img/recompensas/darknessstone.webp"
+   }
+  ]
+ },
+ {
+  "nome": "Dragon Stone",
+  "acesso": "Free",
+  "nivel": 100,
+  "dificuldade": 1,
+  "descricao": "Começa na cidade de LILYCOVE, full pra baixo na ilha da direita, desça no buraco e de surf até o final da esquerda desça novamente no buraco e vá até o final da hunt, tem um baú",
+  "video": "https://www.youtube.com/watch?v=9oB6YrTVDfU",
+  "recompensas": [
+   {
+    "nome": "dragonstone",
+    "img": "img/recompensas/dragonstone.webp"
+   }
+  ]
+ },
+ {
+  "nome": "100 Hds",
+  "acesso": "Free",
+  "nivel": 100,
+  "dificuldade": 1,
+  "descricao": "Começa na cidade de CERULEAN, pra DIREITA nas cavernas de pedra, siga até o final da hunt pelo labirinto, tem uma pedra vermelha",
+  "video": "https://www.youtube.com/watch?v=wPmGkdwnvbA",
+  "recompensas": [
+   {
+    "nome": "100hds",
+    "img": "img/recompensas/100hds.webp"
+   }
+  ]
+ },
+ {
+  "nome": "100 Ultraball",
+  "acesso": "Free",
+  "nivel": 100,
+  "dificuldade": 1,
+  "descricao": "Começa na cidade de VERMILION, pra CIMA perto da pedra entre no buraco, siga até o final da hunt pelo labirinto, tem uma pedra vermelha",
+  "video": "https://www.youtube.com/watch?v=Qd66prG1T9o",
+  "recompensas": [
+   {
+    "nome": "ultraball",
+    "img": "img/recompensas/ultraball.webp"
+   }
+  ]
+ },
+ {
+  "nome": "Jungle",
+  "acesso": "Free",
+  "nivel": 50,
+  "dificuldade": 2,
+  "descricao": "Começa na cidade de GOLDENRUD, pra CIMA fale com o npc para capturar o pokémon Bonsly e troque por um shiny vileplume",
+  "video": "https://www.youtube.com/watch?v=iXMWtaXJsPg",
+  "recompensas": [
+   {
+    "nome": "shinyvileplume",
+    "img": "img/recompensas/shinyvileplume.png"
+   }
+  ]
+ },
+ {
+  "nome": "Milotic",
+  "acesso": "Free",
+  "nivel": 130,
+  "dificuldade": 2,
+  "descricao": "Passe pela piramide em LAVARIDGE entre na piramide e va até o final da piramide e procure um báu onde você encontra um feebas, e em seguida evolua para uma milotic",
+  "video": "https://www.youtube.com/watch?v=qI1fAeYnOW8",
+  "recompensas": [
+   {
+    "nome": "milotic",
+    "img": "img/recompensas/milotic.png"
+   }
+  ]
+ },
+ {
+  "nome": "Farol",
+  "acesso": "Free",
+  "nivel": 150,
+  "dificuldade": 2,
+  "descricao": "So juntar a quantidade de itens que a npc janine de olivine, localizada no farol pede: 500 Water gems, 100 Bat Wing, 300 Little Carrot, 200 Bottle of Poison, 200 Pot of moss bug e 100 Coloured eggs",
+  "video": "https://www.youtube.com/watch?v=bBuSA5IvrAQ",
+  "recompensas": [
+   {
+    "nome": "addonboxsuper",
+    "img": "img/recompensas/addonboxsuper.webp"
+   }
+  ]
+ },
+ {
+  "nome": "Conquest",
+  "acesso": "Free",
+  "nivel": 150,
+  "dificuldade": 2,
+  "descricao": "Junte 3 amigos e enfrente os poderosos Guardian Magmar, Precisa de jynx em PEWTER, arcanine em VERMILION na ilha, gengar e venussaur em cinabar no subsolo.",
+  "video": "https://www.youtube.com/watch?v=J0M1rQcie2o",
+  "recompensas": [
+   {
+    "nome": "addonbox",
+    "img": "img/recompensas/addonbox.webp"
+   }
+  ]
+ },
+ {
+  "nome": "Boost Ice",
+  "acesso": "VIP",
+  "nivel": 300,
+  "dificuldade": 2,
+  "descricao": "CERULEAN pra cima na ilha de gelo deça na caverna e va até o final da hunt, consiga uma boost stone no final da hunt",
+  "video": "https://www.youtube.com/watch?v=zwxll39GOV4",
+  "recompensas": [
+   {
+    "nome": "booststone",
+    "img": "img/recompensas/booststone.webp"
+   }
+  ]
+ },
+ {
+  "nome": "Boost Hell",
+  "acesso": "Free",
+  "nivel": 300,
+  "dificuldade": 2,
+  "descricao": "Inicio na cidade de CINABAR pra DIREITA desça no magmar e passe pelo portal, Consiga uma boost stone no final da hunt",
+  "video": "https://www.youtube.com/watch?v=ZWF9zkucgfY",
+  "recompensas": [
+   {
+    "nome": "booststone",
+    "img": "img/recompensas/booststone.webp"
+   }
+  ]
+ },
+ {
+  "nome": "Boost Leaf",
+  "acesso": "Free",
+  "nivel": 300,
+  "dificuldade": 2,
+  "descricao": "Inicio na cidade de CASTELIA pra ESQUERDA desça na ilha e entre no buraco, Consiga uma boost stone no final da hunt",
+  "video": "https://www.youtube.com/watch?v=X81s6EsEDJs",
+  "recompensas": [
+   {
+    "nome": "booststone",
+    "img": "img/recompensas/booststone.webp"
+   }
+  ]
+ },
+ {
+  "nome": "Metagross",
+  "acesso": "Free",
+  "nivel": null,
+  "dificuldade": 2,
+  "descricao": "Consiga 3 itens: strange symbols, scarab coins, silver broochs dos lendarios Regice em DEWFORD, Regirock em MAUVILLE e Registeel em LILYCOVE e complete a quest Metagross em DEWFORD pra esquerda na ilha",
+  "video": "https://www.youtube.com/watch?v=2kUq-l847MM",
+  "recompensas": [
+   {
+    "nome": "Metagross",
+    "img": "img/recompensas/metagross.png"
+   },
+   {
+    "nome": "Absol",
+    "img": "img/recompensas/absol.png"
+   }
+  ]
+ },
+ {
+  "nome": "Drapion",
+  "acesso": "VIP",
+  "nivel": 400,
+  "dificuldade": 2,
+  "descricao": "Começa na cidade de GOLDENROD, pra CIMA/ESQUERDA tem uma ilha com uma casa entre e desça no buraco, siga até o final da hunt pelo labirinto, consiga um Shiny de graça e uma boost stone",
+  "video": "https://www.youtube.com/watch?v=UCjqQv0GT54",
+  "recompensas": [
+   {
+    "nome": "shinydrapion",
+    "img": "img/recompensas/shinydrapion.png"
+   },
+   {
+    "nome": "booststone",
+    "img": "img/recompensas/booststone.webp"
+   }
+  ]
+ },
+ {
+  "nome": "Fire Gale",
+  "acesso": "Free",
+  "nivel": 500,
+  "dificuldade": 2,
+  "descricao": "Começa na cidade de LAVARIDGE, pra ESQUERDA tem um castelo entre e siga para o meio nas escadarias entre na porta depois na caverna suba a escada na frente da pilastra fale FIRE, ganhe uma outfit",
+  "video": "https://www.youtube.com/watch?v=DPV4GK_3YWc",
+  "recompensas": [
+   {
+    "nome": "charizardoutfit",
+    "img": "img/recompensas/charizardoutfit.webp"
+   }
+  ]
+ },
+ {
+  "nome": "Leaf Gale",
+  "acesso": "VIP",
+  "nivel": 500,
+  "dificuldade": 2,
+  "descricao": "Inicio na cidade de NEW BARK pra FULL BAIXO NA ILHA, va até o final da hunt e clique no TUMULO com o botão direito do mouse ganhe uma outfit",
+  "video": "https://www.youtube.com/watch?v=EShnZdGadwQ",
+  "recompensas": [
+   {
+    "nome": "venusauroutfit",
+    "img": "img/recompensas/venusauroutfit.webp"
+   }
+  ]
+ },
+ {
+  "nome": "Punch Gale",
+  "acesso": "Free",
+  "nivel": 500,
+  "dificuldade": 2,
+  "descricao": "Inicio na cidade de DEWFORD pra BAIXO NA CASA, va até o final da hunt e clique na pedra com o botão direito do mouse ganhe uma outfit",
+  "video": "https://www.youtube.com/watch?v=t2BI5QkN2sI",
+  "recompensas": [
+   {
+    "nome": "punchoutfit",
+    "img": "img/recompensas/punchoutfit.webp"
+   }
+  ]
+ },
+ {
+  "nome": "Water Gale",
+  "acesso": "Free",
+  "nivel": 500,
+  "dificuldade": 2,
+  "descricao": "Inicio na cidade de DEWFORD pra CIMA no barco fale com npc, Enfrente diversos pokemon do tipo water e no final ganhe uma outfit",
+  "video": "https://www.youtube.com/watch?v=VNMZHxROxns",
+  "recompensas": [
+   {
+    "nome": "blastoiseoutfit",
+    "img": "img/recompensas/blastoiseoutfit.webp"
+   }
+  ]
+ },
+ {
+  "nome": "Fly Gale",
+  "acesso": "Free",
+  "nivel": 500,
+  "dificuldade": 2,
+  "descricao": "Inicio na cidade de MISTRALTON pra BAIXO, va até o final da hunt e clique NA PEDRA com o botão direito do mouse ganhe uma outfit",
+  "video": "https://www.youtube.com/watch?v=Bvzp7l2itTI",
+  "recompensas": [
+   {
+    "nome": "flyoutfit",
+    "img": "img/recompensas/flyoutfit.webp"
+   }
+  ]
+ },
+ {
+  "nome": "Psych Gale",
+  "acesso": "Free",
+  "nivel": 500,
+  "dificuldade": 2,
+  "descricao": "Inicio na cidade de NIMBASA pra BAIXO no safari, va até o final da hunt e clique NA PEDRA com o botão direito do mouse ganhe uma outfit",
+  "video": "https://www.youtube.com/watch?v=WToosf6vvaA",
+  "recompensas": [
+   {
+    "nome": "psychicoutfit",
+    "img": "img/recompensas/psychicoutfit.webp"
+   }
+  ]
+ },
+ {
+  "nome": "Electric Gale",
+  "acesso": "Free",
+  "nivel": 500,
+  "dificuldade": 2,
+  "descricao": "Inicio na cidade de COUMARINE pra BAIXO na porta de cima da casa das pedras, va até o final da hunt e clique NA PEDRA com o botão direito do mouse ganhe uma outfit",
+  "video": "https://www.youtube.com/watch?v=BD-pBsWjF9I",
+  "recompensas": [
+   {
+    "nome": "electricgale",
+    "img": "img/recompensas/electricgale.webp"
+   }
+  ]
+ },
+ {
+  "nome": "Fairy Gale",
+  "acesso": "Free",
+  "nivel": 500,
+  "dificuldade": 2,
+  "descricao": "Começa na cidade de CAMPHRIER, pra ESQUERDA E CIMA de fly até a entrada da fairy gale, de surf no lago e entra na caverna na primeira escada da esquerda, Enfrente diversos pokemon do tipo fairy e no final ganhe uma outfit",
+  "video": "https://www.youtube.com/watch?v=p2Zwt6gDBwE",
+  "recompensas": [
+   {
+    "nome": "fairyoutfit",
+    "img": "img/recompensas/fairyoutfit.webp"
+   }
+  ]
+ },
+ {
+  "nome": "Dragon Gale",
+  "acesso": "Free",
+  "nivel": 500,
+  "dificuldade": 2,
+  "descricao": "Inicio na cidade de COUMARINE pra CIMA na ilha no final da hunt, va até o final da hunt e clique NA PEDRA com o botão direito do mouse ganhe uma outfit",
+  "video": "https://www.youtube.com/watch?v=qi-T7TzU9wQ",
+  "recompensas": [
+   {
+    "nome": "dragongale",
+    "img": "img/recompensas/dragongale.webp"
+   }
+  ]
+ },
+ {
+  "nome": "Fossil",
+  "acesso": "Free",
+  "nivel": null,
+  "dificuldade": 3,
+  "descricao": "Na cidade de FUCHSIA na safari zone no ss do game va full canto esquerdo abrira um buraco, fique la até dropar uma pedra de fossil, depois va em LITTLEROOT falar com npc do segundo andar da casa ao lado",
+  "video": "https://www.youtube.com/watch?v=Pkzcc49KtZQ",
+  "recompensas": [
+   {
+    "nome": "aerodactyl",
+    "img": "img/recompensas/aerodactyl.png"
+   },
+   {
+    "nome": "omastar",
+    "img": "img/recompensas/omastar.png"
+   },
+   {
+    "nome": "armaldo",
+    "img": "img/recompensas/armaldo.png"
+   },
+   {
+    "nome": "kabutops",
+    "img": "img/recompensas/kabutops.png"
+   },
+   {
+    "nome": "bastiodon",
+    "img": "img/recompensas/bastiodon.png"
+   }
+  ]
+ },
+ {
+  "nome": "Magnetic",
+  "acesso": "Free",
+  "nivel": 250,
+  "dificuldade": 3,
+  "descricao": "Vá até CANAVALE FULL PRA CIMA NA ILHA, com 5 pessoas, la dentro da quest ative e diminua as luzes do game e posicione cada um em um luz, no centro fica um e clica na pedra ancestral. Enfrente os Guardian Probopass",
+  "video": "https://www.youtube.com/watch?v=GrIfCtLO4hY",
+  "recompensas": [
+   {
+    "nome": "probopass",
+    "img": "img/recompensas/probopass.png"
+   }
+  ]
+ },
+ {
+  "nome": "Aegislash",
+  "acesso": "VIP",
+  "nivel": 250,
+  "dificuldade": 3,
+  "descricao": "Consiga TMS únicos investigando um antigo palácio",
+  "video": "https://www.youtube.com/watch?v=JAwzrewN7l0",
+  "recompensas": [
+   {
+    "nome": "aegislash",
+    "img": "img/recompensas/aegislash.png"
+   }
+  ]
+ },
+ {
+  "nome": "Mamoswine",
+  "acesso": "Free",
+  "nivel": 250,
+  "dificuldade": 3,
+  "descricao": "Complete todas missões e enfrente o poderoso Guardian Mamoswine",
+  "video": "https://www.youtube.com/watch?v=kEJ2IRSP0pU",
+  "recompensas": [
+   {
+    "nome": "mamoswine",
+    "img": "img/recompensas/mamoswine.png"
+   }
+  ]
+ },
+ {
+  "nome": "Haunted House",
+  "acesso": "VIP",
+  "nivel": 666,
+  "dificuldade": 3,
+  "descricao": "Complete os enigmas da Haunted House e consiga um ótimo pokemon",
+  "video": "https://www.youtube.com/watch?v=0bMI6ZUZ13Q",
+  "recompensas": [
+   {
+    "nome": "golurk",
+    "img": "img/recompensas/golurk.png"
+   }
+  ]
+ },
+ {
+  "nome": "Crystal Quest",
+  "acesso": "Free",
+  "nivel": null,
+  "dificuldade": 3,
+  "descricao": "Consiga uma Crystal Tail e troque por acesso e tente capturar um crystal onix",
+  "video": "https://www.youtube.com/watch?v=DxVLdBXr2XQ",
+  "recompensas": [
+   {
+    "nome": "shiny onix",
+    "img": "img/recompensas/shinyonix.png"
+   }
+  ]
+ },
+ {
+  "nome": "Mega Ring",
+  "acesso": "VIP",
+  "nivel": 300,
+  "dificuldade": 4,
+  "descricao": "Consiga uma bateria e 10x forge material para o professor sycamore, e consiga desbloquear a mega evolução",
+  "video": "",
+  "recompensas": []
+ },
+ {
+  "nome": "Korrina",
+  "acesso": "Free",
+  "nivel": 250,
+  "dificuldade": 3,
+  "descricao": "Você entende de Mega evolução? prove e enfrente a lendária Korrina e seus Mega Lucarios",
+  "video": "https://www.youtube.com/watch?v=YrOT6oZ0CPM",
+  "recompensas": [
+   {
+    "nome": "Mega Lucario",
+    "img": "img/recompensas/megalucario.png"
+   },
+   {
+    "nome": "Mega Lucario Z",
+    "img": "img/recompensas/megalucarioz.png"
+   }
+  ]
+ },
+ {
+  "nome": "Steve Stone",
+  "acesso": "Free",
+  "nivel": 250,
+  "dificuldade": 3,
+  "descricao": "Ajude Steve Stone a desvendar o mistério da Rogue Evolução",
+  "video": "https://www.youtube.com/watch?v=tJs-TOY0HiM",
+  "recompensas": [
+   {
+    "nome": "Mega Blaziken",
+    "img": "img/recompensas/megablaziken.png"
+   },
+   {
+    "nome": "Mega Swampert",
+    "img": "img/recompensas/megaswampert.png"
+   },
+   {
+    "nome": "Mega Sceptile",
+    "img": "img/recompensas/megasceptile.png"
+   }
+  ]
+ },
+ {
+  "nome": "Burned",
+  "acesso": "Free",
+  "nivel": 400,
+  "dificuldade": 4,
+  "descricao": "Junte 600 itens raros: 200x scarab, 200x brooch, 200x strange e complete uma das quests mais cara do jogo",
+  "video": "https://www.youtube.com/watch?v=IgnOPhZe_4o",
+  "recompensas": [
+   {
+    "nome": "lickilicky",
+    "img": "img/recompensas/lickilicky.png"
+   },
+   {
+    "nome": "rhyperior",
+    "img": "img/recompensas/rhyperior.png"
+   }
+  ]
+ },
+ {
+  "nome": "Celebi",
+  "acesso": "Free",
+  "nivel": 400,
+  "dificuldade": 4,
+  "descricao": "Viaje para Ilex Forest e devenda o mistério de Celebi, você vai precisar de ajuda",
+  "video": "https://www.youtube.com/watch?v=2UIMqhyyTwo",
+  "recompensas": [
+   {
+    "nome": "tangrowth",
+    "img": "img/recompensas/tangrowth.png"
+   }
+  ]
+ },
+ {
+  "nome": "Genesect",
+  "acesso": "Free",
+  "nivel": null,
+  "dificuldade": 4,
+  "descricao": "Enfrente o lendário Genesect em uma missão em unova. Ao finalizar, você ganha uma outfit exclusiva e também libera acesso exclusivo a um npc que te oferece mel para captura de Volcarona",
+  "video": "https://www.youtube.com/watch?v=U3iAG7Y43fI",
+  "recompensas": [
+   {
+    "nome": "genesectoutfit",
+    "img": "img/recompensas/genesectoutfit.webp"
+   },
+   {
+    "nome": "volcarona",
+    "img": "img/recompensas/volcarona.png"
+   }
+  ]
+ },
+ {
+  "nome": "Pesadelo",
+  "acesso": "Free",
+  "nivel": 200,
+  "dificuldade": 4,
+  "descricao": "Você sonha? então enfrente seus pesadelos. Você vai precisar de amigos para conseguir enfrentar os darkrais",
+  "video": "https://www.youtube.com/shorts/LD0o2Y7olHI",
+  "recompensas": [
+   {
+    "nome": "lucario",
+    "img": "img/recompensas/lucario.png"
+   },
+   {
+    "nome": "togekiss",
+    "img": "img/recompensas/togekiss.png"
+   },
+   {
+    "nome": "spiritomb",
+    "img": "img/recompensas/spiritomb.png"
+   }
+  ]
+ },
+ {
+  "nome": "Jurassic",
+  "acesso": "Free",
+  "nivel": 300,
+  "dificuldade": 4,
+  "descricao": "Enfrente os ancient de kalos revividos e escolha entre Amaura e Tyrunt",
+  "video": "https://www.youtube.com/watch?v=AAqKNTG0zcI",
+  "recompensas": [
+   {
+    "nome": "amaura",
+    "img": "img/recompensas/amaura.png"
+   },
+   {
+    "nome": "tyrunt",
+    "img": "img/recompensas/tyrunt.png"
+   }
+  ]
+ },
+ {
+  "nome": "Vale dos Gengar",
+  "acesso": "Free",
+  "nivel": 600,
+  "dificuldade": 5,
+  "descricao": "Primeira aparição de um dos vilões de pokememories, Z, cuidado nessa jornada",
+  "video": "https://www.youtube.com/watch?v=TEtoG-xVYNo",
+  "recompensas": [
+   {
+    "nome": "mimikyu",
+    "img": "img/recompensas/mimikyu.png"
+   },
+   {
+    "nome": "alolanmarowak",
+    "img": "img/recompensas/alolanmarowak.png"
+   }
+  ]
+ },
+ {
+  "nome": "Iris",
+  "acesso": "Free",
+  "nivel": 300,
+  "dificuldade": 4,
+  "descricao": "Consiga todos pokémon dragão para iris, desbloqueando acesso a Iris Dungeons .",
+  "video": "https://www.youtube.com/watch?v=cDgI4upI_L0",
+  "recompensas": [
+   {
+    "nome": "Mega Dragonite",
+    "img": "img/recompensas/megadragonite.png"
+   },
+   {
+    "nome": "Mega Baxcalibur",
+    "img": "img/recompensas/megabaxcalibur.png"
+   }
+  ]
+ },
+ {
+  "nome": "Memories Quest",
+  "acesso": "Free",
+  "nivel": 600,
+  "dificuldade": 5,
+  "descricao": "Segunda aparição de Z. Aqui você precisará de ajuda de um Celebi para viajar ao passado",
+  "video": "https://www.youtube.com/watch?v=kBme51Qt_AA",
+  "recompensas": [
+   {
+    "nome": "Roaringmoon",
+    "img": "img/recompensas/roaringmoon.png"
+   },
+   {
+    "nome": "Alolanvulpix",
+    "img": "img/recompensas/alolanvulpix.png"
+   }
+  ]
+ },
+ {
+  "nome": "Bug Gale",
+  "acesso": "VIP",
+  "nivel": 500,
+  "dificuldade": 2,
+  "descricao": "Capture os 11 Pokémon que o NPC Samurai pede.",
+  "video": "https://www.youtube.com/watch?v=qEJ0lBLI1cg",
+  "recompensas": [
+   {
+    "nome": "buggale",
+    "img": "img/recompensas/buggale.png"
+   }
+  ]
+ }
+]

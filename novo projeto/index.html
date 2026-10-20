@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wiki Pokémon</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="wiki.css">
+</head>
+<body class="loading">
+  <header class="top"></header>
+  <main class="wrap">
+    <section class="logo-hero">
+      <div class="big-ball"></div>
+      <h1 id="site-name">Wiki Pokémon</h1>
+    </section>
+    <nav class="abas" id="abas"></nav>
+    <div id="secao"><div class="msg">Carregando…</div></div>
+  </main>
+
+  <dialog id="dlg-sugerir">
+    <form method="dialog">
+      <h3>💡 Sugerir</h3>
+      <p class="hint">Conte o que está faltando ou errado. A administração revisa antes de publicar.</p>
+      <textarea name="texto" rows="5" maxlength="500" placeholder="Ex.: encontrei em New Bark, perto do lago…" required></textarea>
+      <p class="dlg-msg"></p>
+      <div class="dlg-acoes">
+        <button class="btn ghost" value="cancel" formnovalidate>Cancelar</button>
+        <button class="btn" value="ok">Enviar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
