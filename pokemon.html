@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pokémon · Wiki Pokémon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="loading">
+  <header class="top"></header>
+  <main class="wrap">
+    <a class="back" href="index.html">← Voltar para a Pokédex</a>
+    <div id="content"><div class="msg">Carregando…</div></div>
+  </main>
+
+  <script type="module">
+    import { requireApproved, renderHeader } from "./auth.js";
+    import { API, art, TYPES, STATS, idFromUrl, pad, nice, typeBadge, getJSON } from "./poke.js";
+
+    const user = await requireApproved();
+    if (user) {
+      renderHeader(user);
+      const id = Number(new URLSearchParams(location.search).get("id")) || 1;
+      const box = document.getElementById("content");
+
+      // Português não existe na PokéAPI: usa espanhol, senão inglês
+      const pick = (arr, field) =>
+        (arr.find((x) => x.language.name === "es") || arr.find((x) => x.language.name === "en") || {})[field] || "";
+
+      function evoRows(node) {
+        const row = [{ id: idFromUrl(node.species.url), name: node.species.name }];
+        if (!node.evolves_to.length) return [row];
+        return node.evolves_to.flatMap((n) => evoRows(n).map((r) => row.concat(r)));
+      }
+
+      try {
+        const [pk, sp] = await Promise.all([
+          getJSON(API + "pokemon/" + id),
+          getJSON(API + "pokemon-species/" + id),
+        ]);
+        const evo = await getJSON(sp.evolution_chain.url);
+        const name = nice(sp.name);
+        const mainColor = (TYPES[pk.types[0].type.name] || [, "#888"])[1];
+        document.title = `${name} · Wiki Pokémon`;
+
+        const rows = evoRows(evo.chain);
+        const evoHtml = rows.length === 1 && rows[0].length === 1
+          ? `<p class="flavor">Este Pokémon não evolui.</p>`
+          : rows.map((r) => `<div class="evo">${r.map((e, i) => `
+              ${i ? `<span class="arrow">→</span>` : ""}
+              <a href="pokemon.html?id=${e.id}" class="${e.id === id ? "current" : ""}">
+                <img src="${art(e.id)}" alt="" loading="lazy">${nice(e.name)}
+              </a>`).join("")}</div>`).join("");
+
+        const total = pk.stats.reduce((s, x) => s + x.base_stat, 0);
+        box.innerHTML = `
+          <div class="detail">
+            <div>
+              <div class="panel showcase" style="--c:${mainColor}">
+                <div class="num">${pad(id)}</div>
+                <img src="${art(id)}" alt="${name}">
+                <h1>${name}</h1>
+                <div class="types">${pk.types.map((t) => typeBadge(t.type.name)).join("")}</div>
+                <div class="genus">${pick(sp.genera, "genus")}</div>
+              </div>
+              <div class="nav-pk">
+                ${id > 1 ? `<a href="pokemon.html?id=${id - 1}">← ${pad(id - 1)}</a>` : "<span></span>"}
+                ${id < 1025 ? `<a href="pokemon.html?id=${id + 1}">${pad(id + 1)} →</a>` : ""}
+              </div>
+            </div>
+            <div>
+              <div class="panel">
+                <h2>Sobre</h2>
+                <p class="flavor">${pick(sp.flavor_text_entries, "flavor_text").replace(/[\f\n]/g, " ")}</p>
+                <div class="facts">
+                  <div class="fact"><small>Altura</small><b>${(pk.height / 10).toFixed(1)} m</b></div>
+                  <div class="fact"><small>Peso</small><b>${(pk.weight / 10).toFixed(1)} kg</b></div>
+                  <div class="fact"><small>Habilidades</small><b>${pk.abilities.map((a) => nice(a.ability.name)).join(", ")}</b></div>
+                  <div class="fact"><small>Taxa de captura</small><b>${sp.capture_rate}</b></div>
+                </div>
+              </div>
+              <div class="panel">
+                <h2>Status base · total ${total}</h2>
+                ${pk.stats.map((s) => `
+                  <div class="stat">
+                    <span>${STATS[s.stat.name]}</span><b>${s.base_stat}</b>
+                    <div class="bar"><i style="width:${Math.min(100, s.base_stat / 2)}%"></i></div>
+                  </div>`).join("")}
+              </div>
+              <div class="panel">
+                <h2>Evoluções</h2>
+                ${evoHtml}
+              </div>
+            </div>
+          </div>`;
+      } catch (e) {
+        box.innerHTML = `<div class="msg">Não foi possível carregar esse Pokémon. (${e.message})</div>`;
+      }
+    }
+  </script>
+</body>
+</html>

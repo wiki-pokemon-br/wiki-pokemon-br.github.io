@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pokédex · Wiki Pokémon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="loading">
+  <header class="top"></header>
+  <main class="wrap">
+    <section class="hero">
+      <h1>Pokédex</h1>
+      <p>Procure qualquer Pokémon pelo nome ou número, ou filtre por geração e tipo.</p>
+    </section>
+
+    <div class="filters">
+      <input id="q" type="search" placeholder="Buscar: pikachu, 25, char…" autocomplete="off">
+      <select id="gen"></select>
+      <select id="type"><option value="">Todos os tipos</option></select>
+    </div>
+    <div class="count" id="count"></div>
+    <div class="grid" id="grid"></div>
+    <button class="btn more" id="more" hidden>Carregar mais</button>
+  </main>
+
+  <script type="module">
+    import { requireApproved, renderHeader } from "./auth.js";
+    import { API, art, TYPES, GENS, idFromUrl, pad, nice, getJSON } from "./poke.js";
+
+    const user = await requireApproved();
+    if (user) {
+      renderHeader(user);
+      const $ = (id) => document.getElementById(id);
+      const PAGE = 60;
+      let all = [], shown = PAGE, typeSet = null;
+
+      $("gen").innerHTML = GENS.map((g, i) => `<option value="${i}">${g[0]}</option>`).join("");
+      $("type").innerHTML += Object.entries(TYPES).map(([k, [l]]) => `<option value="${k}">${l}</option>`).join("");
+
+      // Lembra os filtros pela URL (dá para mandar link com filtro)
+      const params = new URLSearchParams(location.search);
+      $("q").value = params.get("q") || "";
+      $("gen").value = params.get("gen") || "0";
+      $("type").value = params.get("type") || "";
+
+      $("grid").innerHTML = `<div class="msg">Carregando Pokémon…</div>`;
+      const list = await getJSON(API + "pokemon-species?limit=1025");
+      all = list.results.map((p) => ({ id: idFromUrl(p.url), name: p.name }));
+
+      async function loadType() {
+        const t = $("type").value;
+        typeSet = null;
+        if (t) {
+          const data = await getJSON(API + "type/" + t);
+          typeSet = new Set(data.pokemon.map((p) => idFromUrl(p.pokemon.url)));
+        }
+      }
+
+      function filtered() {
+        const q = $("q").value.trim().toLowerCase().replace("#", "");
+        const [, from, to] = GENS[$("gen").value];
+        return all.filter((p) =>
+          p.id >= from && p.id <= to &&
+          (!typeSet || typeSet.has(p.id)) &&
+          (!q || p.name.includes(q) || String(p.id) === String(Number(q))));
+      }
+
+      function render() {
+        const items = filtered();
+        $("count").textContent = `${items.length} Pokémon encontrados`;
+        $("grid").innerHTML = items.length
+          ? items.slice(0, shown).map((p) => `
+              <a class="card" href="pokemon.html?id=${p.id}">
+                <span class="num">${pad(p.id)}</span>
+                <img src="${art(p.id)}" alt="${nice(p.name)}" loading="lazy">
+                <span class="name">${nice(p.name)}</span>
+              </a>`).join("")
+          : `<div class="msg">Nenhum Pokémon encontrado 😢</div>`;
+        $("more").hidden = items.length <= shown;
+      }
+
+      function update() {
+        shown = PAGE;
+        const p = new URLSearchParams();
+        if ($("q").value) p.set("q", $("q").value);
+        if ($("gen").value !== "0") p.set("gen", $("gen").value);
+        if ($("type").value) p.set("type", $("type").value);
+        history.replaceState(null, "", p.toString() ? "?" + p : location.pathname);
+        render();
+      }
+
+      $("q").oninput = update;
+      $("gen").onchange = update;
+      $("type").onchange = async () => { await loadType(); update(); };
+      $("more").onclick = () => { shown += PAGE; render(); };
+
+      await loadType();
+      render();
+    }
+  </script>
+</body>
+</html>
